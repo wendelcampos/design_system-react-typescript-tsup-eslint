@@ -2,5 +2,20 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0"
+  },
+  "packageManager": "npm@9.0.0",
+  "dependencies": {
+    "@storybook/addon-actions": "^8.5.3",
+    "@storybook/addon-controls": "^8.5.3",
+    "@storybook/addon-docs": "^8.5.3",
+    "@storybook/react": "^8.5.3",
+    "@storybook/theming": "^8.5.3"
+  }
 }
