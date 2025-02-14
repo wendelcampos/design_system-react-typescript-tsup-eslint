@@ -7,8 +7,15 @@ export default {
   component: Box,
   args: {
     children: <Text>Testando</Text>
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null
+      }
+    }
   }
-} as Meta<BoxProps>
+} as unknown as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {
 
